@@ -54,7 +54,7 @@ SWAGGER_SETTINGS = {
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["m6-app.onrender.com", "127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -70,7 +70,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
  # custom apps
-    'm6_app.core',
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -83,7 +83,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'm6_app.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATES = [
     {
@@ -100,7 +100,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'm6_app.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database
